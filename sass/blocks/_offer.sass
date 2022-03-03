@@ -1,0 +1,37 @@
+.swiper
+  position: relative
+  width: 100%
+  height: 88vh
+  &-slide
+    // &__img
+    //   object-fit: fill
+.slider
+  &-button
+    position: absolute
+    z-index: 99
+    top: 50%
+    transform: translateY(-50%)
+    border: none
+    // background: red
+    width: 70px
+    height: 70px
+    cursor: pointer
+    background-color: transparent
+    background-image: url(../img/slider/arrow-right.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 80px
+    border-radius: 100px
+    &--next
+      right: 20px
+      background-image: url(../img/slider/arrow-right.svg)
+    &--prev
+      left: 20px
+      background-image: url(../img/slider/arrow-left.svg)
+.swiper-slide__img
+  width: 100%
+  height: 100%
+  object-fit: cover
+  // background-repeat: no-repeat
+  // background-size: cover
+  // background-position: center

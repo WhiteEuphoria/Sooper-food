@@ -4,22 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/test-3.jpg">
   <title>SuperFOOD optovik</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" 
   rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">
+    <div class="header__wrapper">
+    <div class="header__container">
+    <div class="logo">
       <span>SuperFOOD optovik</span>
     </div>
-    <div class="header__contact">
+    <div class="header__contacts">
       <a href="#" class="header__contacts--location">
         <img src="img/header/location.svg" alt="">
         <span>Киев</span>
       </a>
-     <a href="" class="header_contacts--number">+38(063) 6342493</a> 
+     <a href="" class="header__contacts--number">
+      +38(063) 634 24 93
+      </a> 
     </div>
+    <!-- /.header__contacts -->
     <ul class="nav-menu">
       <li class="nav-menu__item">
         <a href="#" class="nav-menu__item--link">Каталог</a>
@@ -34,9 +42,12 @@
         <a href="#" class="nav-menu__item--link">Контакты</a>
       </li>
     </ul>
-    <form action="" class="header__search">
-      <input type="text" name="text" class="search" placeholder="Search here!">
-      <input type="submit" name="submit" class="submit" value="Search">
+    <form action="" class="search">
+      <input type="text" name="text" class="search__text" placeholder="Поиск продуктов...">
+      <input type="submit" name="submit" class="search__submit" value="">
+      <!-- <button>
+        <img src="img/header/search.svg" alt="">
+      </button> -->
     </form>
     <div class="header__switch">
       <span>RU</span>
@@ -44,6 +55,76 @@
       <span>UA</span>
     </div>
     <img src="img/header/basket.svg" alt="" class="header--basket">
+    </div>
+    <!-- /.header__container -->
+    </div>
+    <!-- /.wrapper__wrapper -->
   </header>
+  <section class="offer">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="img/test-3.jpg" alt="" class="swiper-slide__img">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/test-2.jpeg" alt="" class="swiper-slide__img">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/test-1.jpeg" alt="" class="swiper-slide__img">
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <button class="slider-button slider-button--prev"></button>
+      <button class="slider-button slider-button--next"></button>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+  <section class="bestsellers">
+    <h1 class="bestsellers__title">Хит Продаж!</h1>
+    <div class="bestsellers__wrapper">
+      <div class="bestsellers__card">
+        <img src="img/hits/hit-1.jpeg" alt="" class="bestsellers__card--img">
+        <a href="#" class="bestsellers__card--button">Подробнее</a>
+      </div>
+      <div class="bestsellers__card">
+        <img src="img/hits/hit-2.jpeg" alt="" class="bestsellers__card--img">
+        <a href="#" class="bestsellers__card--button">Подробнее</a>
+      </div>
+      <div class="bestsellers__card">
+        <img src="img/hits/hit-3.jpeg" alt="" class="bestsellers__card--img">
+        <a href="#" class="bestsellers__card--button">Подробнее</a>
+      </div>
+    </div>
+  </section>
+  <section class="promo">
+    <div class="promo__wrapper">
+      <div class="block">
+        <div class="block__container">
+          <div>
+            <img class="block__img" src="img/test-1.jpeg" alt="">
+          </div>
+          
+          <div class="block__info">
+            <h2>Бесплатная доставка</h2>
+            <span>Бесплатная доставка при заказе на сумму  от 2000грн</span>
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <!-- /.block__container -->
+      </div>
+    </div>
+    <!-- /.promo__wrapper -->
+  </section>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
