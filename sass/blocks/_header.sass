@@ -1,7 +1,5 @@
 .header
   background: #51AF5C
-  // padding-top: 20px
-  // padding-bottom: 20px
   height: 12vh
   &__wrapper
     position: relative
@@ -14,28 +12,28 @@
     display: flex
     justify-content: space-between
     align-items: center
-  &__contacts
-    display: flex
-    flex-direction: column
-    & a
-      text-decoration: none
-      color: #ffff
-    &--location
-      & span
-        font-weight: 300
-        font-size: 15px
-        line-height: 145%
-    &--number
-      font-weight: 500
-      font-size: 17px
-      line-height: 145%
-      letter-spacing: 0.125em
-  &__basket
-    cursor: pointer
 .logo
   font-weight: bold
   font-size: 25px
   line-height: 145%
+  & a
+    color: white
+.location
+  display: flex
+  flex-direction: column
+  & a
+    color: #ffff
+  &__city
+    & span
+      font-weight: 300
+      font-size: 15px
+      line-height: 145%
+  &__number
+    font-weight: 500
+    font-size: 17px
+    line-height: 145%
+    letter-spacing: 0.125em
+
 .search
   width: 300px
   display: flex
@@ -68,5 +66,6 @@
     font-size: 17px
     line-height: 145%
     &--link
-      text-decoration: none
       color: white
+.basket
+  cursor: pointer
