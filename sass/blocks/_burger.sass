@@ -1,0 +1,106 @@
+@media (max-width: 769px)
+  // .burger
+  //   position: fixed
+  //   z-index: 99
+  //   top: 12px
+  //   left: 30px
+  //   width: 50px
+  //   height: 50px
+  //   background: rgba(255, 255, 255, 0.3)
+  //   border-radius: 30px
+  //   cursor: pointer
+  //   &::after
+  //     content: ''
+  //     background-color: black
+  //     position: absolute
+  //     width: 75%
+  //     height: 1.5px
+  //     left: 6px
+  //     bottom: 18px
+  //     transition: 0.5s
+  //   &::before
+  //     top: 18px
+  //     content: ''
+  //     background-color: black
+  //     position: absolute
+  //     width: 75%
+  //     height: 1.5px
+  //     left: 6px
+  //     transition: 0.5s
+  .burger
+    position: fixed
+    z-index: 99
+    top: 12px
+    left: 30px
+    width: 50px
+    height: 50px
+    background: rgba(255, 255, 255, 0.3)
+    border-radius: 30px
+    & span
+      position: absolute
+      width: 30px
+      height: 2px
+      top: 50%
+      margin-top: -1px
+      left: 50%
+      margin-left: -15px
+      &::before
+        position: absolute
+        width: 30px
+        height: 2px
+        background-color: black
+        top: 50%
+        margin-top: -1px
+        left: 50%
+        margin-left: -15px
+        content: ''
+        transform: translateY(-5px)
+      &::after
+        content: ''
+        position: absolute
+        width: 30px
+        height: 2px
+        background-color: black
+        top: 50%
+        margin-top: -1px
+        left: 50%
+        margin-left: -15px
+        transform: translateY(5px)
+
+@media (max-width: 420px)
+  .burger
+    position: fixed
+    z-index: 99
+    top: 12px
+    left: 20px
+
+  // width: 30px
+  // height: 20px
+  // z-index: 99
+  // &::after
+  //   content: ''
+  //   background-color: black
+  //   position: absolute
+  //   width: 100%
+  //   height: 1.5px
+  //   left: 0
+  //   bottom: 7px
+  //   transition: 0.5s
+  // &::before
+  //   top: 0
+  //   content: ''
+  //   background-color: black
+  //   position: absolute
+  //   width: 100%
+  //   height: 1.5px
+  //   left: 0
+  //   transition: 0.5s
+  // &__wrapp
+  //   background: rgba(255, 255, 255, 0.3)
+  //   border-radius: 30px
+  //   position: fixed
+  //   top: 43px
+  //   left: 40px
+  //   cursor: pointer
+  //   widows: 30px
+  //   height: 20px

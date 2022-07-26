@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
   speed: 800,
-  loop: true,
+  loop: false,
 
   // If we need pagination
   pagination: {
@@ -23,9 +23,9 @@ const swiper = new Swiper('.swiper', {
   keyboard: {
     enabled : true
   },
-  autoplay: {
-    delay: 3000,
-    stopOnLastSlide: false,
-    disableOnInteraction: true
-  }
+  // autoplay: {
+  //   delay: 3000,
+  //   stopOnLastSlide: false,
+  //   disableOnInteraction: true
+  // }
 });
