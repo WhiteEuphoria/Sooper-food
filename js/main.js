@@ -1,3 +1,4 @@
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
@@ -28,4 +29,12 @@ const swiper = new Swiper('.swiper', {
   //   stopOnLastSlide: false,
   //   disableOnInteraction: true
   // }
+});
+
+const burgerBtn = document.querySelector(".burger")
+
+burgerBtn.addEventListener("click", function (){
+    document.querySelector(".burger").classList.toggle("burger--active");
+    document.querySelector(".nav-menu").classList.toggle("nav-menu--active");
+    document.querySelector(".wrap").classList.toggle("button--unvis");
 });

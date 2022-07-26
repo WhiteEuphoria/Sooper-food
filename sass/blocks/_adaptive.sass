@@ -211,11 +211,27 @@
 @media (max-width: 769px)
   .nav-menu
     display: none
+    &--active
+      display: flex
+      position: fixed
+      top: 10vh
+      width: 100%
+      height: 100vh
+      background: rgba(8, 18, 9, 0.95)
+      text-align: center
+      flex-direction: column
+      margin: 0
+      animation: visible 1.2s forwards
+    &__item
+      margin-top: 40px
+      margin-left: 0
+      animation: font 1.2s forwards
+  .button--unvis
+    display: none
   .call
     display: block
     width: 50px
     height: 50px
-    margin-left: 60px
   .bestsellers
     &__wrapper
       flex-direction: column

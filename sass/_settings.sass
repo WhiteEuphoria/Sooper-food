@@ -5,5 +5,47 @@ body
   font-family: 'Ubuntu', sans-serif
   color: #FFFFFF
   margin: 0
+
 a
   text-decoration: none
+
+.title
+  text-align: center
+  color: black
+  margin-top: 120px
+  margin-bottom: 40px
+  font-weight: 700
+  font-size: 33px
+  line-height: 145%
+  text-transform: uppercase
+
+@media (max-width: 1025px)
+  .title
+    margin-top: 110px
+    margin-bottom: 30px
+    font-size: 28px
+@media (max-width: 769px)
+  .title
+    margin-top: 105px
+    margin-bottom: 25px
+    font-size: 27px
+@media (max-width: 481px)
+  .title
+    margin-top: 100px
+    margin-bottom: 20px
+    font-size: 25px
+@media (max-width: 381px)
+  .title
+    margin-top: 95px
+    margin-bottom: 20px
+
+@keyframes visible
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@keyframes font
+  0%
+    font-size: 0
+  100%
+    font-size: 17px

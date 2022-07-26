@@ -1,0 +1,167 @@
+.q
+  width: 154px
+  height: 44px
+  background: rgba(1, 92, 101, 0.3)
+  border-radius: 30px
+  color: black
+  display: flex
+  align-items: center
+  justify-content: center
+
+.product
+  margin-top: 120px
+  margin-bottom: 50px
+  color: black
+  &__container
+    display: flex
+    justify-content: space-evenly
+  &__img
+    background: black
+    width: 500px
+    height: 550px
+    border-radius: 30px
+    & img
+      object-fit: fill
+  &__title
+    font-style: normal
+    font-weight: 700
+    font-size: 30px
+    line-height: 145%
+    margin-top: 0
+    margin-bottom: 15px
+    &--mobile
+      display: none
+    &--exist
+      font-style: normal
+      font-weight: 700
+      font-size: 20px
+      line-height: 145%
+      color: #00AB13
+  &__pay-wrapp
+    display: flex
+    align-items: flex-end
+    max-width: 570px
+    justify-content: space-between
+  &__functional
+    display: flex
+    align-items: flex-end
+    &--basket
+      margin-left: 30px
+  &__price
+    margin-top: 50px
+    position: relative
+    &--unit
+      position: absolute
+      width: 68px
+      bottom: 38px
+      font-style: normal
+      font-weight: 300
+      font-size: 10px
+      line-height: 145%
+      color: rgba(0, 0, 0, 0.7)
+    &--value
+      font-weight: 700
+      font-size: 25px
+      line-height: 145%
+  &__sum
+    position: relative
+    margin-left: 20px
+    &--text
+      position: absolute
+      bottom: 30px
+      font-weight: 300
+      font-size: 10px
+      line-height: 145%
+      color: rgba(0, 0, 0, 0.7)
+    &--value
+      font-weight: 700
+      font-size: 20px
+      line-height: 145%
+  &__feature
+    &--title
+      margin-top: 35px
+      margin-bottom: 25px
+      display: block
+      font-weight: 700
+      font-size: 20px
+      line-height: 145%
+      color: rgba(0, 0, 0, 0.7)
+    &--text
+      width: 670px
+      font-weight: 400
+      font-size: 15px
+      line-height: 145%
+
+.basket
+  width: 50px
+  height: 50px
+  // &__feature
+  //   &--text
+  //     width:
+
+@media (max-width: 1281px)
+  .product
+    &__img
+      background: black
+      width: 500px
+      height: 640px
+      border-radius: 30px
+    &__feature
+      &--text
+        width: 557px
+@media (max-width: 1121px)
+  .product
+    &__img
+      background: black
+      width: 440px
+      height: 500px
+      border-radius: 30px
+    &__feature
+      &--text
+        width: 520px
+@media (max-width: 1025px)
+  .product
+    &__img
+      width: 400px
+      height: 440px
+    &__title
+      font-size: 27px
+      width: 330px
+      &--exist
+        font-size: 17px
+    &__pay-wrapp
+      max-width: 440px
+    &__functional
+      &--basket
+        margin-left: 20px
+    &__price
+      margin-top: 50px
+      &--value
+        font-size: 23px
+    &__sum
+      margin-left: 17px
+      &--value
+        font-weight: 700
+        font-size: 20px
+        line-height: 145%
+    &__feature
+      &--text
+        width: 420px
+  .q
+    width: 134px
+    height: 38px
+@media (max-width: 921px)
+  .product
+    &__container
+      flex-direction: column
+      align-items: center
+    &__img
+      width: 580px
+      height: 380px
+    &__title
+      display: none
+      &--mobile
+        display: block
+        width: 500px
+    &__pay-wrapp
+      max-width: 400px

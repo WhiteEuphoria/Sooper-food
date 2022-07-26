@@ -1,27 +1,19 @@
 .delivery
   color: black
-  margin-top: 130px
-  &__title
-    font-style: normal
-    font-weight: 700
-    font-size: 33px
-    line-height: 145%
-    text-transform: uppercase
-    text-align: center
-    margin-bottom: 50px
   &__text
     font-style: normal
     font-weight: 400
     font-size: 23px
     line-height: 145%
-    max-width: 1350px
-    margin: auto
+    text-align: center
   &__item
     text-align: center
+.container
+  max-width: 1350px
+  margin: auto
 .pay
-  margin-bottom: 130px
   &__title
-    margin-bottom: 100px
+    margin: 0
     background: radial-gradient(86.66% 86.66% at 50% 50%, #008D10 0%, rgba(0, 141, 16, 0) 100%)
     text-align: center
     font-weight: 700
@@ -29,8 +21,8 @@
     line-height: 145%
     text-transform: uppercase
   &__container
-    max-width: 1400px
-    margin: auto
+    margin-top: 80px
+    margin-bottom: 80px
     display: flex
     justify-content: space-around
     flex-wrap: wrap
@@ -103,7 +95,8 @@
   &__img
     position: absolute
     right: 0
-    bottom: 0
+    bottom: -5px
+    border-radius: 0 0 50px 0
 .pay-card-4
   width: 605px
   height: 273px
@@ -123,3 +116,322 @@
     top: 0
     left: 0
     border-radius: 55px 0 0 0
+
+@media (max-width: 1400px)
+  .container
+    max-width: 1200px
+  .pay-card-title
+    font-size: 25px
+  .pay-card-text
+    font-size: 17px
+
+  .pay-card-1
+    width: 481px
+    height: 273px
+    &__title
+      margin-left: 50px
+      margin-top: 50px
+      margin-bottom: 50px
+    &__text
+      width: 240px
+      margin-left: 50px
+
+  .pay-card-2
+    width: 604px
+    height: 354px
+    &__title
+      margin-left: 120px
+      width: 285px
+    &__text
+      margin-left: 120px
+      width: 445px
+
+  .pay-card-3
+    width: 481px
+    height: 354px
+    &__title
+      margin-left: 33px
+      width: 411px
+    &__text
+      width: 297px
+      margin-left: 33px
+    &__img
+      width: 136px
+      height: 156px
+
+  .pay-card-4
+    width: 605px
+    height: 273px
+    &__title
+      margin-left: 107px
+      width: 287px
+    &__text
+      width: 454px
+      margin-left: 107px
+    &__img
+      width: 92px
+      height: 133px
+
+@media (max-width: 1280px)
+  .container
+    max-width: 1150px
+  .delivery
+    &__text
+      font-size: 22px
+@media (max-width: 1150px)
+  .container
+    max-width: 1000px
+  .pay-card-1
+    width: 427px
+    height: 273px
+    &__title
+      margin-left: 32px
+      margin-top: 40px
+      margin-bottom: 34px
+    &__text
+      width: 262px
+      margin-left: 32px
+
+  .pay-card-2
+    width: 427px
+    height: 341px
+    &__title
+      margin-left: 105px
+      width: 214px
+    &__text
+      margin-left: 105px
+      width: 281px
+    &__img
+      width: 105px
+      height: 133px
+
+  .pay-card-3
+    width: 428px
+    height: 308px
+    &__title
+      margin-left: 33px
+      width: 395px
+    &__text
+      width: 323px
+      margin-left: 33px
+    &__img
+      width: 130px
+      height: 135px
+      right: -6px
+      bottom: -4px
+      border-radius: 0 0 75px 0
+
+  .pay-card-4
+    width: 427px
+    height: 240px
+    &__title
+      margin-left: 77px
+      width: 272px
+    &__text
+      width: 329px
+      margin-left: 77px
+    &__img
+      width: 80px
+      height: 101px
+@media (max-width: 1024px)
+  .container
+    max-width: 920px
+    &__text
+      font-size: 21px
+  .pay
+    &__container
+      margin-top: 60px
+      margin-bottom: 60px
+  .pay-card-title
+    font-size: 23px
+  .pay-card-text
+    font-size: 15px
+  .pay-card-1
+    width: 427px
+    height: 253px
+    &__title
+      margin-left: 32px
+      margin-top: 40px
+      margin-bottom: 34px
+    &__text
+      width: 240px
+      margin-left: 32px
+
+  .pay-card-2
+    width: 427px
+    height: 311px
+    &__title
+      margin-left: 105px
+      width: 214px
+    &__text
+      margin-left: 105px
+      width: 281px
+
+  .pay-card-3
+    width: 428px
+    height: 258px
+    &__title
+      margin-left: 33px
+      width: 395px
+    &__text
+      width: 323px
+      margin-left: 33px
+
+  .pay-card-4
+    width: 427px
+    height: 240px
+    &__title
+      margin-left: 77px
+      width: 272px
+    &__text
+      width: 329px
+      margin-left: 77px
+
+@media (max-width: 921px)
+  .container
+    max-width: 580px
+  .pay-card-width
+    width: 100%
+    margin-bottom: 20px
+    & ::last-child
+      margin-bottom: 0
+@media (max-width: 769px)
+  .delivery
+    &__text
+      font-size: 20px
+@media (max-width: 601px)
+  .container
+    max-width: 500px
+  .delivery
+    &__item
+      & img
+        width: 100%
+  .pay
+    &__container
+      margin-top: 50px
+      margin-bottom: 50px
+@media (max-width: 510px)
+  .container
+    width: 100%
+  .pay-card-3
+    &__img
+      right: 0
+
+@media (max-width: 450px)
+  .pay-card-title
+    font-size: 22px
+  .pay-card-text
+    font-size: 15px
+  .pay-card-1
+    &__img
+      width: 90px
+      height: 90px
+  .pay-card-2
+    &__title
+      margin-left: 105px
+      width: 214px
+    &__text
+      margin-left: 105px
+      width: 250px
+    &__img
+      width: 95px
+      height: 123px
+
+  .pay-card-3
+    height: 280px
+    &__title
+      margin-left: 33px
+      width: 199px
+    &__text
+      width: 270px
+      margin-left: 33px
+    &__img
+      right: 0
+      width: 120px
+      height: 125px
+
+  .pay-card-4
+    &__title
+      margin-left: 77px
+      width: 200px
+    &__text
+      width: 270px
+      margin-left: 77px
+    &__img
+      width: 70px
+      height: 91px
+@media (max-width: 384px)
+  .pay
+    &__container
+      margin-top: 40px
+      margin-bottom: 40px
+  .pay-card-title
+    font-size: 21px
+  .pay-card-text
+    font-size: 14px
+  .pay-card-1
+    height: 180px
+    &__title
+      margin-left: 33px
+      margin-top: 30px
+      margin-bottom: 18px
+    &__text
+      width: 240px
+      margin-left: 33px
+    &__img
+      width: 70px
+      height: 70px
+  .pay-card-2
+    height: 270px
+    &__title
+      margin-left: 80px
+      width: 214px
+      margin-bottom: 15px
+    &__text
+      margin-left: 80px
+      width: 240px
+    &__img
+      width: 75px
+      height: 100px
+
+  .pay-card-3
+    height: 260px
+    &__title
+      margin-left: 33px
+      width: 199px
+    &__text
+      width: 240px
+      margin-left: 33px
+    &__img
+      right: 0
+      width: 100px
+      height: 105px
+
+  .pay-card-4
+    height: 220px
+    &__title
+      margin-left: 77px
+      width: 200px
+    &__text
+      width: 230px
+      margin-left: 77px
+    &__img
+      width: 65px
+      height: 86px
+@media (max-width: 340px)
+  .pay
+    &__container
+      margin-top: 30px
+      margin-bottom: 30px
+  .pay-card-1
+    &__title
+      margin-left: 17px
+    &__text
+      width: 240px
+      margin-left: 17px
+  .delivery__text
+    font-size: 21px
+  // .pay-card-title
+  //   font-size: 25px
+  // .pay-card-text
+  //   font-size: 17px
