@@ -2908,9 +2908,11 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 580px;
+    margin: auto;
   }
   .product__img {
-    width: 580px;
+    width: 100%;
     height: 380px;
   }
   .product__title {
@@ -2921,7 +2923,26 @@ template {
     width: 500px;
   }
   .product__pay-wrapp {
-    max-width: 400px;
+    max-width: 100%;
+    margin-top: 25px;
+  }
+  .product__functional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__functional--basket {
+    display: none;
+  }
+  .product__sum {
+    margin-top: 40px;
+  }
+  .product__sum--value {
+    font-size: 22px;
+  }
+  .product__feature--text {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

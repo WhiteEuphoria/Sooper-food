@@ -31,10 +31,27 @@ const swiper = new Swiper('.swiper', {
   // }
 });
 
-const burgerBtn = document.querySelector(".burger")
+const burgerBtn = document.querySelector(".burger");
+
 
 burgerBtn.addEventListener("click", function (){
     document.querySelector(".burger").classList.toggle("burger--active");
     document.querySelector(".nav-menu").classList.toggle("nav-menu--active");
     document.querySelector(".wrap").classList.toggle("button--unvis");
 });
+
+let screenWindows = screen.width;
+
+let block = document.querySelector("#pay-product");
+let elem1 = document.getElementById("element");
+let elem2 = document.querySelector(".product__price")
+  if (screenWindows <= 921) {
+    let wrap = document.createElement("div")
+    block.insertBefore(wrap, elem2)    
+    wrap.append(elem1)
+    wrap.appendChild(elem2)
+  }
+
+   
+    
+    
