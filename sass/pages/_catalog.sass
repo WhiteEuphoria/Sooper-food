@@ -1,10 +1,13 @@
 .catalog
   max-width: 1280px
   margin: auto
+  margin-top: 12vh
   &__container
     display: flex
     flex-wrap: wrap
     justify-content: space-around
+  // &__title
+  //   margin-top: 40px
 
 .card-product
   width: 350px
@@ -13,6 +16,8 @@
   border-radius: 30px
   color: black
   margin-bottom: 50px
+  & ::last-child
+    margin-bottom: 0
   &__img
     width: 350px
     height: 275px

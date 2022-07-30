@@ -15,10 +15,11 @@ a {
 }
 
 .title {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   color: black;
-  margin-top: 120px;
-  margin-bottom: 40px;
   font-weight: 700;
   font-size: 33px;
   line-height: 145%;
@@ -27,32 +28,32 @@ a {
 
 @media (max-width: 1025px) {
   .title {
-    margin-top: 110px;
-    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-size: 28px;
   }
 }
 
 @media (max-width: 769px) {
   .title {
-    margin-top: 105px;
-    margin-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     font-size: 27px;
   }
 }
 
 @media (max-width: 481px) {
   .title {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 25px;
   }
 }
 
 @media (max-width: 381px) {
   .title {
-    margin-top: 95px;
-    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -94,7 +95,7 @@ a {
 
 .close {
   position: fixed;
-  top: 90px;
+  top: 14vh;
   right: 30px;
   width: 50px;
   height: 50px;
@@ -633,6 +634,7 @@ template {
   position: relative;
   width: 100%;
   height: 88vh;
+  margin-top: 12vh;
 }
 
 .slider-button {
@@ -1176,7 +1178,45 @@ template {
 
 @media (max-width: 920px) {
   .nav-menu {
-    padding-left: 20px;
+    display: none;
+  }
+  .nav-menu--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 9vh;
+    width: 100%;
+    height: 100vh;
+    background: rgba(8, 18, 9, 0.95);
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: visible 1s forwards;
+            animation: visible 1s forwards;
+  }
+  .nav-menu__item {
+    margin-top: 40px;
+    margin-left: 0;
+    -webkit-animation: font 0.7s forwards;
+            animation: font 0.7s forwards;
+  }
+  .search__text {
+    height: 40px;
+    width: 200px;
+    padding-left: 40px;
+  }
+  .button--unvis {
+    display: none;
+  }
+  .call {
+    display: block;
+    width: 50px;
+    height: 50px;
   }
   .card-hit__img {
     width: 400px;
@@ -1209,17 +1249,6 @@ template {
 }
 
 @media (max-width: 820px) {
-  .nav-menu {
-    padding-left: 10px;
-  }
-  .nav-menu__item {
-    margin-left: 20px;
-  }
-  .search__text {
-    height: 40px;
-    width: 52px;
-    padding-left: 50px;
-  }
   .card-hit__img {
     width: 350px;
     height: 350px;
@@ -1251,40 +1280,10 @@ template {
 }
 
 @media (max-width: 769px) {
-  .nav-menu {
-    display: none;
-  }
-  .nav-menu--active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    top: 10vh;
-    width: 100%;
-    height: 100vh;
-    background: rgba(8, 18, 9, 0.95);
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0;
-    -webkit-animation: visible 1.2s forwards;
-            animation: visible 1.2s forwards;
-  }
-  .nav-menu__item {
-    margin-top: 40px;
-    margin-left: 0;
-    -webkit-animation: font 1.2s forwards;
-            animation: font 1.2s forwards;
-  }
-  .button--unvis {
-    display: none;
-  }
-  .call {
-    display: block;
-    width: 50px;
-    height: 50px;
+  .search__text {
+    height: 40px;
+    width: 52px;
+    padding-left: 50px;
   }
   .bestsellers__wrapper {
     -webkit-box-orient: vertical;
@@ -1542,7 +1541,7 @@ template {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .burger {
     display: block;
     position: relative;
@@ -1594,6 +1593,7 @@ template {
 .catalog {
   max-width: 1280px;
   margin: auto;
+  margin-top: 12vh;
 }
 
 .catalog__container {
@@ -1614,6 +1614,10 @@ template {
   border-radius: 30px;
   color: black;
   margin-bottom: 50px;
+}
+
+.card-product ::last-child {
+  margin-bottom: 0;
 }
 
 .card-product__img {
@@ -2003,6 +2007,7 @@ template {
 }
 
 .about {
+  margin-top: 12vh;
   color: black;
 }
 
@@ -2016,6 +2021,7 @@ template {
   font-weight: 400;
   font-size: 23px;
   line-height: 35px;
+  margin-top: 0;
 }
 
 .about__text p span {
@@ -2108,6 +2114,7 @@ template {
 
 .delivery {
   color: black;
+  margin-top: 12vh;
 }
 
 .delivery__text {
@@ -2697,12 +2704,13 @@ template {
 }
 
 .product {
-  margin-top: 120px;
+  margin-top: 12vh;
   margin-bottom: 50px;
   color: black;
 }
 
 .product__container {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2812,8 +2820,11 @@ template {
   line-height: 145%;
 }
 
-.product__feature--title {
+.product__feature {
   margin-top: 35px;
+}
+
+.product__feature--title {
   margin-bottom: 25px;
   display: block;
   font-weight: 700;
@@ -2901,6 +2912,7 @@ template {
 
 @media (max-width: 921px) {
   .product__container {
+    padding-top: 35px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2943,6 +2955,70 @@ template {
   }
   .product__feature--text {
     width: 100%;
+  }
+}
+
+@media (max-width: 679px) {
+  .product__container {
+    padding-top: 30px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 579px) {
+  .product__container {
+    max-width: 430px;
+  }
+  .product__title--mobile {
+    font-size: 25px;
+    width: 430px;
+  }
+  .product__img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 481px) {
+  .product__container {
+    padding-top: 25px;
+    max-width: 90%;
+  }
+  .product__title--mobile {
+    font-size: 22px;
+    width: 90%;
+  }
+  .product__img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 468px) {
+  .product__title--mobile {
+    width: 80%;
+  }
+}
+
+@media (max-width: 381px) {
+  .product__container {
+    padding-top: 20px;
+    max-width: 90%;
+  }
+  .product__title--mobile {
+    font-size: 20px;
+  }
+  .product__img {
+    width: 100%;
+    height: 270px;
+  }
+}
+
+@media (max-width: 341px) {
+  .product__container {
+    padding-top: 15px;
+  }
+  .product__img {
+    height: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */

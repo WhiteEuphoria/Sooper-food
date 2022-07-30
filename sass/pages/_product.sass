@@ -9,10 +9,11 @@
   justify-content: center
 
 .product
-  margin-top: 120px
+  margin-top: 12vh
   margin-bottom: 50px
   color: black
   &__container
+    padding-top: 50px
     display: flex
     justify-content: space-evenly
   &__img
@@ -78,8 +79,8 @@
       font-size: 20px
       line-height: 145%
   &__feature
+    margin-top: 35px
     &--title
-      margin-top: 35px
       margin-bottom: 25px
       display: block
       font-weight: 700
@@ -98,7 +99,6 @@
   // &__feature
   //   &--text
   //     width:
-
 @media (max-width: 1281px)
   .product
     &__img
@@ -153,6 +153,7 @@
 @media (max-width: 921px)
   .product
     &__container
+      padding-top: 35px
       flex-direction: column
       align-items: center
       max-width: 580px
@@ -176,7 +177,56 @@
       margin-top: 40px
       &--value
         font-size: 22px
-
     &__feature
       &--text
         width: 100%
+@media (max-width: 679px)
+  .product
+    &__container
+      padding-top: 30px
+      max-width: 500px
+@media (max-width: 579px)
+  .product
+    &__container
+      max-width: 430px
+    &__title
+      &--mobile
+        font-size: 25px
+        width: 430px
+    &__img
+      height: 350px
+
+@media (max-width: 481px)
+  .product
+    &__container
+      padding-top: 25px
+      max-width: 90%
+    &__title
+      &--mobile
+        font-size: 22px
+        width: 90%
+    &__img
+      width: 100%
+      height: 300px
+@media (max-width: 468px)
+  .product
+    &__title
+      &--mobile
+        width: 80%
+@media (max-width: 381px)
+  .product
+    &__container
+      padding-top: 20px
+      max-width: 90%
+    &__title
+      &--mobile
+        font-size: 20px
+    &__img
+      width: 100%
+      height: 270px
+@media (max-width: 341px)
+  .product
+    &__container
+      padding-top: 15px
+    &__img
+      height: 240px
